@@ -1,0 +1,20 @@
+{
+  "name": "book-app",
+  "version": "1.0.0",
+  "description": "Book app",
+  "homepage": "https://github.com/StanleyIG/java-striptease-advanced#readme",
+  "bugs": {
+    "url": "https://github.com/StanleyIG/java-striptease-advanced/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StanleyIG/java-striptease-advanced.git"
+  },
+  "license": "ISC",
+  "author": "StanleyIG",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
