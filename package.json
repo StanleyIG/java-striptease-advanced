@@ -12,16 +12,18 @@
   },
   "license": "ISC",
   "author": "StanleyIG",
-  "type": "commonjs",
-  "main": "index.js",
+  "type": "module",
+  "main": "app.js",
   "scripts": {
-    "build": "rollup",
+    "build": "rollup -c --watch",
     "start": "live-server"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@rollup/plugin-node-resolve": "^16.0.3",
     "eslint": "^10.0.2",
     "globals": "^17.3.0",
-    "rollup": "^4.59.0"
+    "rollup": "^4.59.0",
+    "rollup-plugin-import-css": "^4.2.0"
   }
 }
