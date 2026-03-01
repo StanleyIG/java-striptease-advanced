@@ -1,0 +1,57 @@
+.page__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.page__switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.page__switch:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-1px);
+}
+
+.page__switch:active {
+    transform: translateY(0);
+}
+
+.page__switch img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease;
+}
+
+.page__switch:hover img {
+    transform: scale(1.1);
+}
+
+.page__switch.prev-page:hover img {
+    transform: scale(1.1) translateX(-2px);
+}
+
+.page__switch.next-page:hover img {
+    transform: scale(1.1) translateX(2px);
+}
+
+.page__switch div {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Состояние disabled (когда кнопка неактивна) */
+.page__switch.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
